@@ -1,6 +1,8 @@
 import sys
 import pygame
 
+from settings import Settings
+
 class AlienInvasion:
     """Overall Class"""
     
