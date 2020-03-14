@@ -12,3 +12,4 @@ class GameStats:
     def reset_stats(self):
         """Statistics change throughout the game"""
         self.ships_left = self.settings.ship_limit
+        self.score = 0 #This resets the scoreboard
