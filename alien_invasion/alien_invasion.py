@@ -180,6 +180,7 @@ class AlienInvasion:
 
         else:
             self.stats.game_active = False
+            pygame.mouse.set_visible(True)
 
 
     def _create_fleet(self):
