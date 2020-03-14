@@ -41,9 +41,13 @@ class AlienInvasion:
         """Begin game loop"""
         while True:
             self._check_events()
-            self.ship.update()
-            self._update_bullets()
-            self._update_aliens()
+
+            if self.stats.game_active:
+                # These functions will only run when the game is active
+                self.ship.update()
+                self._update_bullets()
+                self._update_aliens()
+
             self._update_screen()
 
     def _check_events(self):
@@ -126,8 +130,8 @@ class AlienInvasion:
         for alien in self.aliens.sprites():
             if alien.rect.bottom >= screen_rect.bottom:
                 # reset fleet and decrease lives by 1
-            self._ship_hit()
-            break
+                self._ship_hit()
+                break
 
     def _ship_hit(self):
         """Respond to the ship being hit by an alien"""
