@@ -117,6 +117,18 @@ class AlienInvasion:
         if pygame.sprite.spritecollideany(self.ship, self.aliens):
             self._ship_hit()
 
+        # Look for any aliens that hit the bottom of the screen
+        self._check_aliens_bottom()
+
+    def _check_aliens_bottom(self):
+        """ When an alien reaches the bottom of the screen"""
+        screen_rect = self.screen.get_rect()
+        for alien in self.aliens.sprites():
+            if alien.rect.bottom >= screen_rect.bottom:
+                # reset fleet and decrease lives by 1
+            self._ship_hit()
+            break
+
     def _ship_hit(self):
         """Respond to the ship being hit by an alien"""
         # Decrease the amount of ships left
@@ -132,7 +144,6 @@ class AlienInvasion:
 
         # Pause the game for player to realize the collision
         sleep(0.5)
-
 
 
     def _create_fleet(self):
