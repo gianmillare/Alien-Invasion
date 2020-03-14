@@ -8,6 +8,9 @@ class GameStats:
         # Start the game at an inactive state
         self.game_active = False
 
+        # High scores do not reset
+        self.high_score = 0
+
 
     def reset_stats(self):
         """Statistics change throughout the game"""
