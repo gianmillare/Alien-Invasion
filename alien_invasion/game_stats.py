@@ -16,3 +16,4 @@ class GameStats:
         """Statistics change throughout the game"""
         self.ships_left = self.settings.ship_limit
         self.score = 0 #This resets the scoreboard
+        self.level = 1 #This displays the current level
