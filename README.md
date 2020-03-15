@@ -1,11 +1,10 @@
 # Alien-Invasion
-Video Game built with Python
-
 This enjoyable side-project is from Eric Matthes project-based programming book titled "Python Crash Course". 
 
 The sole purpose of this project was to introduce me to another area of programming, unrelated to data science and machine learning. This project was exciting, and my friends and family enjoyed testing out my code. I hope you will too!
 
 "Alien Invasion" is a Space Invaders-styled game. A Player begins with 4 lives (initial life + 3 more lives). The objective of the game is to shoot the alien fleet. The game will become progressively harder as the player continues to pass each round, and encounters the next fleet. Test your reflexes and your aim!
+
 ------------------------------------------------------------------------------------------------------------------------------
 
 ### Below is a screenshot/sneak peak at the code used throughout the project
